@@ -6,12 +6,13 @@
 		  crossorigin="anonymous"></script>
 	  <script>
 		  function hideall(){
+			  $(".languageable").hide();
 		  }
 	  </script>
   </head>
   <body>
     <h3>Choose Language:</h3>
-      <div><img src="israel.png" onclick="hideall();$('israel').show()"/><img src="america.png"/></div>
+      <div><img src="israel.png" onclick="hideall();$('israel').show()"/><img src="america.png" onclick="hideall();$('israel').show()"/></div>
       <h1>The Next World</h1>
 
     <div align="justify">
