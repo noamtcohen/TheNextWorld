@@ -41,9 +41,11 @@
 					
 					var sum = 0;
 					for(var i=1;i<l.length+1;i++)
-						if(l[i] == a || l[i] == b)
+						if(l[i] == a)
 							sum += i;
-					
+					for(var i=1;i<l.length+1;i++)
+						if(l[i] == b)
+							sum += i;
 					alert(sum);
 				},0);
 			}
@@ -81,7 +83,7 @@
 
 		</script>
 	</head>
-	<body style="background-color:black;color:white">
+	<body style="background-color:black;color:white;font-size:3em">
 		Select Functions: <input type="checkbox" checked id="plus"/>+
 		<input type="checkbox" id="minus"/>- 
 		<input type="checkbox" id="times"/>* 
